@@ -23,16 +23,6 @@
         android:hint="Digite o nome do produto para pesquisar ou cadastrar"/>
 
     <EditText
-        android:id="@+id/txtListaProdutos"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="10sp"
-        android:gravity="start|top"
-        android:inputType="textMultiLine"
-        android:scrollbars="vertical"
-        android:hint="Digite o nome do produto"/>
-
-    <EditText
         android:id="@+id/txtCustoProdutos"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
