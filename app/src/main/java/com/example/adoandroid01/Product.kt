@@ -6,5 +6,6 @@ import kotlinx.serialization.Serializable
 class Product(
     val nome: String,
     val precoCusto: Float,
-    val precoVenda: Float
+    val precoVenda: Float,
+    val lucro: Float,
 );

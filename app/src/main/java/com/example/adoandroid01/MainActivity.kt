@@ -27,9 +27,9 @@ class MainActivity : AppCompatActivity() {
             txtVendaProdutos.text.clear()
             txtLucroProdutos.text.clear()
         }
-        fun calcularLucro() {
-
-        }
+//        fun calcularLucro() {
+//            var valorTotal =
+//        }
 
         btnSalvar.setOnClickListener { v: View? ->
             if (txtNomeProdutos.text.isNotEmpty()) {
@@ -37,7 +37,8 @@ class MainActivity : AppCompatActivity() {
                     Product(
                         txtNomeProdutos.text.toString(),
                         txtCustoProdutos.text.toString().toFloat(),
-                        txtVendaProdutos.text.toString().toFloat()
+                        txtVendaProdutos.text.toString().toFloat(),
+                        txtLucroProdutos.text.toString().toFloat()
                     )
                 )
 
@@ -63,6 +64,8 @@ class MainActivity : AppCompatActivity() {
                     txtNomeProdutos.setText(produtoCarregado.nome)
                     txtCustoProdutos.setText(produtoCarregado.precoCusto.toString())
                     txtVendaProdutos.setText(produtoCarregado.precoVenda.toString())
+                    txtLucroProdutos.setText(produtoCarregado.lucro.toString())
+
 
                     Toast.makeText(this, "Produto carregado com sucesso", Toast.LENGTH_SHORT).show()
                 }
